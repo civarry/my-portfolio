@@ -11,7 +11,7 @@ const HomeSection = ({ homeRef }) => {
       ref={homeRef}
       className="section contact-section h-screen w-screen bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
     >
-      <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-start lg:mt-96 lg:gap-7">
+      <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
         <h3 className="font-Code text-[#eff30e] text-xs text-center md:text-lg lg:text-left lg:text-xl">
           Frontend Web Developer
         </h3>
@@ -37,7 +37,7 @@ const HomeSection = ({ homeRef }) => {
               loading="lazy"
               role="presentation"
               src={Me}
-              className="object-cover mx-auto grayscale md:w-full md:h-full rounded-xl md:rounded-xl lg:rounded-none"
+              className="object-cover rounded-xl h-full w-full mx-auto grayscale md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full"
               alt="Me"
               decoding="async"
               fetchpriority="high"

@@ -40,7 +40,7 @@ const HomeSection = ({ homeRef }) => {
               className="object-cover mx-auto grayscale md:w-full md:h-full rounded-full md:rounded-xl lg:rounded-none"
               alt="Me"
               decoding="async"
-              fetchpriority="lazy"
+              fetchpriority="high"
             />
           </div>
         </div>

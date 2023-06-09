@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code&family=Fira+Mono&family=Geologica&family=Jost&family=Roboto+Mono&family=Rubik&display=swap');
+
+.font-Geologica {
+  font-family: 'Geologica', sans-serif;
+}
+
+.font-Code {
+  font-family: 'Fira Code', monospace;
+}
+.font-Mono {
+  font-family: 'Fira Mono', monospace;
+}
+.font-Roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+.font-Jost {
+  font-family: 'Jost', sans-serif;
+}
+.font-Rubik {
+  font-family: 'Rubik', sans-serif;
+}
+.font-Anton {
+  font-family: 'Anton', sans-serif;
+}

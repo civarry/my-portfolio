@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiFillGithub } from "react-icons/ai";
+import "../assets/fonts.css";
 
 export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
   return (
     <>
       <nav
-        className={`p-5 shadow md:flex md:items-center md:justify-between fixed top-0 w-full text-white ${
+        className={`p-5 shadow md:flex md:items-center md:justify-between z-50 fixed top-0 w-full text-white ${
           scroll
             ? "bg-[#04133a] transition-colors duration-500 ease-in"
             : "bg-[#0d012c]" //default bg color
@@ -53,7 +54,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           </span>
         </div>
         <ul
-          className={`md:flex md:items-center ${
+          className={`md:flex md:items-center font-Geologica ${
             menuOpen
               ? "z-[-1] md:z-auto md:static bg-[#0d012c] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-100 top-0"
               : "hidden md:flex md:static md:opacity-100 md:top-auto opacity-100"

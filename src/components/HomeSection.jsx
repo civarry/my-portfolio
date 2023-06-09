@@ -37,7 +37,7 @@ const HomeSection = ({ homeRef }) => {
               loading="lazy"
               role="presentation"
               src={Me}
-              className="object-cover rounded-xl h-full w-full mx-auto grayscale md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full"
+              className="object-cover rounded-xl h-full w-full mx-auto grayscale md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full lg:mt-5"
               alt="Me"
               decoding="async"
               fetchpriority="high"

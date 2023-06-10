@@ -2,7 +2,13 @@
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100px);
-  transition: all 1s;
+  transition: all 0.8s;
+}
+.conceal-reverse{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100px);
+  transition: all 0.8s;
 }
 .show{
   opacity: 1;

@@ -20,7 +20,9 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
     const hiddenElements = [];
 
     if (homeRef.current)
-      hiddenElements.push(...homeRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...homeRef.current.querySelectorAll(".conceal, .conceal-reverse")
+      );
     if (aboutRef.current)
       hiddenElements.push(...aboutRef.current.querySelectorAll(".conceal"));
     if (projectsRef.current)

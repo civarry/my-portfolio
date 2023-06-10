@@ -24,11 +24,17 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
         ...homeRef.current.querySelectorAll(".conceal, .conceal-reverse")
       );
     if (aboutRef.current)
-      hiddenElements.push(...aboutRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...aboutRef.current.querySelectorAll(".conceal, .conceal-reverse")
+      );
     if (projectsRef.current)
-      hiddenElements.push(...projectsRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...projectsRef.current.querySelectorAll(".conceal, .conceal-reverse")
+      );
     if (contactRef.current)
-      hiddenElements.push(...contactRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...contactRef.current.querySelectorAll(".conceal, .conceal-reverse")
+      );
 
     hiddenElements.forEach((el) => {
       observer.observe(el);

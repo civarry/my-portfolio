@@ -31,6 +31,11 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
     setMenuOpen(false);
   };
 
+  const handleLinkClick = (event, ref) => {
+    event.preventDefault();
+    scrollToSection(ref);
+  };
+
   return (
     <>
       <nav
@@ -63,7 +68,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           <li className="mx-4 my-6 md:my-0">
             <a
               href="/"
-              onClick={() => scrollToSection(homeRef)}
+              onClick={(e) => handleLinkClick(e, homeRef)}
               className="text-sm hover:text-cyan-500 duration-500"
             >
               Home
@@ -72,7 +77,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           <li className="mx-4 my-6 md:my-0">
             <a
               href="#about"
-              onClick={() => scrollToSection(aboutRef)}
+              onClick={(e) => handleLinkClick(e, aboutRef)}
               className="text-sm hover:text-cyan-500 duration-500"
             >
               About
@@ -81,7 +86,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           <li className="mx-4 my-6 md:my-0">
             <a
               href="#projects"
-              onClick={() => scrollToSection(projectsRef)}
+              onClick={(e) => handleLinkClick(e, projectsRef)}
               className="text-sm hover:text-cyan-500 duration-500"
             >
               Projects
@@ -91,7 +96,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
             <a
               href="https://github.com/civarry"
               target="_blank"
-              onClick={() => scrollToSection(contactRef)}
+              rel="noopener noreferrer"
               className="text-2xl hover:text-cyan-500 duration-500"
             >
               <AiFillGithub />
@@ -100,7 +105,7 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           <li className="mx-4 my-6 md:my-0 bg-[#08c6ab] p-2 pl-5 pr-5 rounded-md w-24">
             <a
               href="#contact"
-              onClick={() => scrollToSection(contactRef)}
+              onClick={(e) => handleLinkClick(e, contactRef)}
               className="text-sm hover:text-cyan-500 duration-500"
             >
               Contact

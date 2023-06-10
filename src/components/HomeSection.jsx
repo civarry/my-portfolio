@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Me from "../assets/Me.png";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import sendLightIcon from "../assets/send-light.svg";
-import "../assets/fonts.css";
 
 const HomeSection = ({ homeRef }) => {
   return (
@@ -11,7 +10,7 @@ const HomeSection = ({ homeRef }) => {
       ref={homeRef}
       className="section contact-section h-screen w-screen bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
     >
-      <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
+      <div className="conceal w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
         <h3 className="font-Code text-[#eff30e] text-xs text-center md:text-lg lg:text-left lg:text-xl">
           Frontend Web Developer
         </h3>
@@ -36,7 +35,7 @@ const HomeSection = ({ homeRef }) => {
           <FaFacebook className="md:text-[#dce1eb] md:text-3xl md:ml-2" />
         </div>
       </div>
-      <div className="w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">
+      <div className="conceal w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">
         <div className="aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-1 lg:aspect-h-1">
           <div className="w-full h-full md:w-auto md:h-auto md:absolute md:inset-0">
             <img

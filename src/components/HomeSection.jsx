@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../assets/Me.webp";
+import Me from "../assets/Me.png";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import sendLightIcon from "../assets/send-light.svg";

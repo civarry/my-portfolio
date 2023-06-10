@@ -1,7 +1,7 @@
 import React from "react";
-import Me from "../assets/Me.png";
+import Me from "../assets/Me.webp";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import sendLightIcon from "../assets/send-light.svg";
 import "../assets/fonts.css";
 
@@ -25,22 +25,24 @@ const HomeSection = ({ homeRef }) => {
           A Computer Science student based in Quezon City, Philippines, with an
           absolute passion for building captivating websites and applications.
         </p>
-        <button className="text-white flex items-center font-Code bg-gradient-to-r from-[#ed7b84] to-[#9055ff] px-8 p-4 max-w-[160px] rounded-full lg:items-left">
-          Hire Me
-          <img src={sendLightIcon} className="ml-2 w-4 h-4" />
+        <button className="cursor-pointer text-white flex items-center font-Code bg-gradient-to-r from-[#ed7b84] to-[#9055ff] px-8 p-4 max-w-[250px] rounded-md lg:items-left hover:from-[#9055ff] hover:to-[#ed7b84] transition-all duration-300">
+          Download Resume
+          <img src={sendLightIcon} className="ml-2 w-4 h-4 animate-bounce" />
         </button>
+
+        <div className="md:flex md:gap-2 hidden mt-2">
+          <AiFillGithub className="md:text-[#dce1eb] md:text-3xl" />
+          <FaLinkedin className="md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          <FaFacebook className="md:text-[#dce1eb] md:text-3xl md:ml-2" />
+        </div>
       </div>
       <div className="w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">
         <div className="aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-1 lg:aspect-h-1">
           <div className="w-full h-full md:w-auto md:h-auto md:absolute md:inset-0">
             <img
-              loading="lazy"
-              role="presentation"
               src={Me}
               className="object-cover rounded-xl h-full w-full mx-auto grayscale md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full lg:mt-5"
               alt="Me"
-              decoding="async"
-              fetchpriority="high"
             />
           </div>
         </div>

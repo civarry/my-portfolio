@@ -20,21 +20,13 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
     const hiddenElements = [];
 
     if (homeRef.current)
-      hiddenElements.push(
-        ...homeRef.current.querySelectorAll(".conceal, .conceal-reverse")
-      );
+      hiddenElements.push(...homeRef.current.querySelectorAll(".conceal"));
     if (aboutRef.current)
-      hiddenElements.push(
-        ...aboutRef.current.querySelectorAll(".conceal, .conceal-reverse")
-      );
+      hiddenElements.push(...aboutRef.current.querySelectorAll(".conceal"));
     if (projectsRef.current)
-      hiddenElements.push(
-        ...projectsRef.current.querySelectorAll(".conceal, .conceal-reverse")
-      );
+      hiddenElements.push(...projectsRef.current.querySelectorAll(".conceal"));
     if (contactRef.current)
-      hiddenElements.push(
-        ...contactRef.current.querySelectorAll(".conceal, .conceal-reverse")
-      );
+      hiddenElements.push(...contactRef.current.querySelectorAll(".conceal"));
 
     hiddenElements.forEach((el) => {
       observer.observe(el);

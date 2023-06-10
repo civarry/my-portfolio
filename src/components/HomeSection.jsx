@@ -38,7 +38,7 @@ const HomeSection = ({ homeRef }) => {
           <FaLinkedin className="conceal md:text-[#dce1eb] md:text-3xl md:ml-2" />
         </div>
       </div>
-      <div className="conceal-reverse w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">
+      <div className="conceal w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">
         <div className="aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-1 lg:aspect-h-1">
           <div className="w-full h-full md:w-auto md:h-auto md:absolute md:inset-0">
             <img

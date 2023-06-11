@@ -1,5 +1,6 @@
 import React from "react";
 import Programming from "../assets/programming.svg";
+import ttten from "../assets/ttten.svg";
 import {
   SiHtml5,
   SiCss3,
@@ -127,7 +128,16 @@ const AboutSection = ({ aboutRef }) => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex-grow flex flex-col justify-center items-center gap-3 lg:w-1/2 lg:items-center lg:justify-center lg:gap-6">
+      <div
+        className="conceal w-full h-full flex-grow flex flex-col justify-center items-center gap-3 lg:w-1/2 lg:items-center lg:justify-center lg:gap-6"
+        style={{
+          backgroundImage: `url(${ttten})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "soft-light",
+        }}
+      >
         <img
           src={Programming}
           className="conceal object-contain rounded-xl w-full mx-auto md:max-h-72 md:w-3/4 lg:max-h-96 lg:w-5/6 xl:max-h-96 xl:w-3/4 2xl:max-h-96 2xl:w-2/3"

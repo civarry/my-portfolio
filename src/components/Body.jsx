@@ -21,7 +21,9 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
     if (homeRef.current)
       hiddenElements.push(...homeRef.current.querySelectorAll(".conceal"));
     if (aboutRef.current)
-      hiddenElements.push(...aboutRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...aboutRef.current.querySelectorAll(".conceal, .conceal-X")
+      );
     if (projectsRef.current)
       hiddenElements.push(...projectsRef.current.querySelectorAll(".conceal"));
     if (contactRef.current)

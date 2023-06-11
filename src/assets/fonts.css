@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code&family=Fira+Mono&family=Geologica&family=Jost&family=Roboto+Mono&family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code&family=Fira+Mono&family=Geologica&family=Jost&family=Poppins:wght@300;400&family=Roboto+Mono&family=Rubik&display=swap');
 .font-Geologica {
   font-family: 'Geologica', sans-serif;
 }
@@ -21,4 +20,7 @@
 }
 .font-Anton {
   font-family: 'Anton', sans-serif;
+}
+.font-Poppins {
+  font-family: 'Poppins', sans-serif;
 }

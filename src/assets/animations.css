@@ -3,8 +3,39 @@
   filter: blur(5px);
   transition: all 1s;
 }
+.conceal-X{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.conceal-X:nth-child(2){
+  transition-delay: 125ms;
+}
+.conceal-X:nth-child(3){
+  transition-delay: 250ms;
+}
+.conceal-X:nth-child(4){
+  transition-delay: 375ms;
+}
+.conceal-X:nth-child(5){
+  transition-delay: 500ms;
+}
+.conceal-X:nth-child(6){
+  transition-delay: 625ms;
+}
+.conceal-X:nth-child(7){
+  transition-delay: 750ms;
+}
+.conceal-X:nth-child(8){
+  transition-delay: 875ms;
+}
+.conceal-X:nth-child(9){
+  transition-delay: 1000ms;
+}
 .show{
   opacity: 1;
   filter: blur(0);
   transition: all 1s;
+  transform: translateX(0);
 }

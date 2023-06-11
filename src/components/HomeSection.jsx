@@ -9,7 +9,7 @@ const HomeSection = ({ homeRef }) => {
   return (
     <section
       ref={homeRef}
-      className="section contact-section h-screen w-screen bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
+      className="section home-section h-screen w-screen bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
         <h3 className="conceal font-Code text-[#eff30e] text-xs text-center md:text-lg lg:text-left lg:text-xl">

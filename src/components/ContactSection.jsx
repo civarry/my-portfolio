@@ -41,7 +41,7 @@ const ContactSection = ({ contactRef }) => {
               Contact Me
             </h1>
           </div>
-          <div className="flex flex-col mt-5 gap-2">
+          <div className="conceal flex flex-col mt-5 gap-2">
             <h6 className="font-Poppins text-md text-[#909faf] flex items-center cursor-pointer">
               <a
                 className="flex items-center"
@@ -78,7 +78,7 @@ const ContactSection = ({ contactRef }) => {
         </div>
         <form
           name="contact-me"
-          className="flex flex-col gap-2 w-full items-end"
+          className="conceal flex flex-col gap-2 w-full items-end"
         >
           <input
             className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"

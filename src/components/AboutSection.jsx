@@ -18,13 +18,13 @@ const AboutSection = ({ aboutRef }) => {
   return (
     <section
       ref={aboutRef}
-      className="section about-section h-screen w-screen bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col justify-center items-center gap-2 md:flex-col md:justify-between md:items-start md:gap-2 lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-2 xl:flex-row-reverse xl:justify-between xl:items-start xl:gap-2"
+      className="section about-section h-screen w-screen bg-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col justify-center items-center gap-2 md:flex-col md:justify-between md:items-start md:gap-2 lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-2 xl:flex-row-reverse xl:justify-between xl:items-start xl:gap-2"
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top gap-3 lg:w-1/2 lg:items-start lg:justify-center lg:gap-6">
         <h2 className="conceal font-Poppins text-xs text-[#08c6ab] tracking-widest">
           ABOUT ME
         </h2>
-        <h3 className="conceal font-Poppins text-3xl font-bold text-white">
+        <h3 className="conceal font-Poppins font-bold text-lg text-[#dce1eb] md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
           WHY HIRE ME FOR YOUR NEXT PROJECT?
         </h3>
         <p className="conceal text-[#cccccc] font-Poppins text-xs">

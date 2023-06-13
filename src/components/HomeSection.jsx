@@ -15,10 +15,10 @@ const HomeSection = ({ homeRef }) => {
         <h3 className="conceal font-Code text-[#eff30e] text-xs text-center md:text-lg lg:text-left lg:text-xl">
           Frontend Web Developer
         </h3>
-        <h3 className="conceal font-Anton text-lg text-[#dce1eb] text-center md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
+        <h3 className="conceal font-Poppins font-black text-lg text-[#dce1eb] text-center md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
           Hey! I Am
         </h3>
-        <h3 className="conceal font-Anton text-lg bg-gradient-to-r from-[#ed7b84] to-[#9055ff] text-transparent bg-clip-text text-center md:text-4xl lg:text-left lg:text-6xl lg:tracking-wide lg:leading-normal">
+        <h3 className="conceal font-Poppins font-black text-lg bg-gradient-to-r from-[#ed7b84] to-[#9055ff] text-transparent bg-clip-text text-center md:text-4xl lg:text-left lg:text-6xl lg:tracking-wide lg:leading-normal">
           Christian Joy C. Carito
         </h3>
         <p className="conceal font-Rubik text-sm text-[#cccccc] text-center md:text-lg lg:text-left lg:text-xl">
@@ -33,9 +33,9 @@ const HomeSection = ({ homeRef }) => {
         </button>
 
         <div className="md:flex md:gap-2 hidden mt-2">
-          <AiFillGithub className=" md:text-[#dce1eb] md:text-3xl" />
-          <FaFacebook className="conceal md:text-[#dce1eb] md:text-3xl md:ml-2" />
-          <FaLinkedin className="conceal md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          <AiFillGithub className="conceal-X md:text-[#dce1eb] md:text-3xl" />
+          <FaFacebook className="conceal-X md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          <FaLinkedin className="conceal-X md:text-[#dce1eb] md:text-3xl md:ml-2" />
         </div>
       </div>
       <div className="conceal w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">

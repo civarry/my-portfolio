@@ -19,13 +19,17 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
     const hiddenElements = [];
 
     if (homeRef.current)
-      hiddenElements.push(...homeRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...homeRef.current.querySelectorAll(".conceal, .conceal-X")
+      );
     if (aboutRef.current)
       hiddenElements.push(
         ...aboutRef.current.querySelectorAll(".conceal, .conceal-X")
       );
     if (projectsRef.current)
-      hiddenElements.push(...projectsRef.current.querySelectorAll(".conceal"));
+      hiddenElements.push(
+        ...projectsRef.current.querySelectorAll(".conceal, .conceal-X")
+      );
     if (contactRef.current)
       hiddenElements.push(...contactRef.current.querySelectorAll(".conceal"));
 

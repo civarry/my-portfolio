@@ -1,22 +1,38 @@
 import React, { useEffect, useState } from "react";
 import pocketapi from "../assets/pocketapi.png";
+import foodcrib from "../assets/foodcrib.png";
+import unsaid from "../assets/unsaid.png";
+import { FaLaptopCode } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 const ProjectsSection = ({ projectsRef }) => {
   const projects = [
     {
       image: pocketapi,
-      title: "Project Title 1",
-      description: "Project Description 1",
+      title: "Pocket API",
+      description:
+        "This project is a straightforward application resembling a phone, which utilizes various APIs to present data for its apps.",
+      tech: "HTML  |  CSS  |  JAVASCRIPT",
+      code: "https://github.com/civarry/pocket-api",
+      live: "https://pocket-api.vercel.app/",
     },
     {
-      image: pocketapi,
-      title: "Project Title 2",
-      description: "Project Description 2",
+      image: unsaid,
+      title: "Unsaid Project",
+      description:
+        "A simple React app that unleashes unspoken feelings to loved ones through anonymous confessions. It provides a platform for sharing emotions often left unexpressed. With anonymity, individuals can open up and reveal their innermost thoughts to those they care about.",
+      tech: "REACT  |  CSS",
+      code: "",
+      live: "",
     },
     {
-      image: pocketapi,
-      title: "Project Title 3",
-      description: "Project Description ",
+      image: foodcrib,
+      title: "Food Crib",
+      description:
+        "A milk tea snack ordering system using HTML, CSS, and PHP that enables businesses to conveniently place food orders online. It features a user-friendly interface for customers to browse snacks.",
+      tech: "HTML  |  CSS  |  JAVASCRIPT  |  PHP",
+      code: "https://github.com/civarry/food-crib",
+      live: "",
     },
     // Add more projects as needed
   ];
@@ -38,7 +54,7 @@ const ProjectsSection = ({ projectsRef }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="conceal-X max-w-sm w-full bg-white shadow-md rounded-md overflow-hidden flex flex-col"
+            className="conceal-X max-w-sm w-full bg-[#14143a] bg-opacity-80 shadow-md border-solid border-[0.1px] border-[#9595965b] rounded-md overflow-hidden flex flex-col"
             style={{ maxHeight: "calc(100vh - 320px)" }}
           >
             <img
@@ -47,8 +63,29 @@ const ProjectsSection = ({ projectsRef }) => {
               alt="Project"
             />
             <div className="p-4 flex-grow md:h-96">
-              <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-              <p className="text-gray-600">{project.description}</p>
+              <h3 className="font-Poppins font-black text-xs mt-2 mb-2 bg-gradient-to-r from-[#ed7b84] to-[#9055ff] text-transparent bg-clip-text text-center tracking-widest md:text-left">
+                {project.tech}
+              </h3>
+              <h2 className="text-xl font-Poppins font-bold mb-2 text-[#59c378]">
+                {project.title}
+              </h2>
+              <p className="text-[#cccccc] font-Poppins text-s text-justify">
+                {project.description}
+              </p>
+            </div>
+            <div className="flex justify-around mb-5 mr-4 ml-4">
+              <h6 className="font-Poppins text-xs text-[#909faf] flex items-center cursor-pointer">
+                <a className="flex" href={project.live} target="_blank">
+                  <FaLaptopCode className="mr-2" />
+                  LIVE DEMO
+                </a>
+              </h6>
+              <h6 className="font-Poppins text-xs text-[#909faf] flex items-center cursor-pointer">
+                <a className="flex" href={project.code} target="_blank">
+                  <AiFillGithub className="mr-2" />
+                  SOURCE CODE
+                </a>
+              </h6>
             </div>
           </div>
         ))}

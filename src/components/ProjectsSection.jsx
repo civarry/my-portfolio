@@ -54,8 +54,8 @@ const ProjectsSection = ({ projectsRef }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="conceal-X max-w-sm w-full h-auto bg-[#14143a] bg-opacity-80 shadow-md border-solid border-[0.1px] border-[#9595965b] rounded-md overflow-hidden flex flex-col hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            style={{ maxHeight: "calc(100vh - 320px)" }}
+            className="conceal-X max-w-sm w-full h-auto bg-[#14143a] bg-opacity-80 shadow-md border-solid border-[0.1px] border-[#9595965b] overflow-hidden rounded-md flex flex-col hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+            style={{ maxHeight: "calc(110vh - 320px)" }}
           >
             <img
               src={project.image}

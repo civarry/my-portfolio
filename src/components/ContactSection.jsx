@@ -81,7 +81,7 @@ const ContactSection = ({ contactRef }) => {
           className="flex flex-col gap-2 w-full items-end"
         >
           <input
-            className="w-full px-4 py-2 border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring focus:ring-indigo-200"
+            className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
             type="text"
             id="name"
             name="name"
@@ -89,7 +89,7 @@ const ContactSection = ({ contactRef }) => {
             required
           />
           <input
-            className="w-full px-4 py-2 border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring focus:ring-indigo-200"
+            className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
             type="email"
             id="email"
             name="email"
@@ -97,7 +97,7 @@ const ContactSection = ({ contactRef }) => {
             required
           />
           <input
-            className="w-full px-4 py-2 border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring focus:ring-indigo-200"
+            className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
             type="text"
             id="subject"
             name="subject"
@@ -105,7 +105,7 @@ const ContactSection = ({ contactRef }) => {
             required
           />
           <textarea
-            className="w-full px-4 py-2 border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring focus:ring-indigo-200"
+            className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
             id="message"
             name="message"
             placeholder="Your message"

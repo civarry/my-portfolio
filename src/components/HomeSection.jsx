@@ -33,9 +33,27 @@ const HomeSection = ({ homeRef }) => {
         </button>
 
         <div className="md:flex md:gap-2 hidden mt-2">
-          <AiFillGithub className="conceal-X md:text-[#dce1eb] md:text-3xl" />
-          <FaFacebook className="conceal-X md:text-[#dce1eb] md:text-3xl md:ml-2" />
-          <FaLinkedin className="conceal-X md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          <a
+            className="conceal-X"
+            href="https://github.com/civarry"
+            target="_blank"
+          >
+            <AiFillGithub className=" md:text-[#dce1eb] md:text-3xl" />
+          </a>
+          <a
+            className="conceal-X"
+            href="https://www.facebook.com/civarry/"
+            target="_blank"
+          >
+            <FaFacebook className="md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          </a>
+          <a
+            className="conceal-X"
+            href="https://www.linkedin.com/in/cccarito/"
+            target="_blank"
+          >
+            <FaLinkedin className=" md:text-[#dce1eb] md:text-3xl md:ml-2" />
+          </a>
         </div>
       </div>
       <div className="conceal w-auto h-auto flex-grow justify-center items-center md:w-full md:h-[0] md:pb-[40.00%] md:relative md:flex-grow lg:w-full lg:h-full lg:flex-grow lg:justify-center lg:items-center">

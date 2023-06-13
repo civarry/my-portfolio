@@ -22,8 +22,8 @@ const ProjectsSection = ({ projectsRef }) => {
       description:
         "A simple React app that unleashes unspoken feelings to loved ones through anonymous confessions. It provides a platform for sharing emotions often left unexpressed. With anonymity, individuals can open up and reveal their innermost thoughts to those they care about.",
       tech: "REACT  |  CSS",
-      code: "",
-      live: "",
+      code: "https://github.com/civarry/unsaid-project-demo",
+      live: "https://unsaid-project-demo.vercel.app/",
     },
     {
       image: foodcrib,
@@ -54,7 +54,7 @@ const ProjectsSection = ({ projectsRef }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="conceal-X max-w-sm w-full bg-[#14143a] bg-opacity-80 shadow-md border-solid border-[0.1px] border-[#9595965b] rounded-md overflow-hidden flex flex-col"
+            className="conceal-X max-w-sm w-full bg-[#14143a] bg-opacity-80 shadow-md border-solid border-[0.1px] border-[#9595965b] rounded-md overflow-hidden flex flex-col hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             style={{ maxHeight: "calc(100vh - 320px)" }}
           >
             <img
@@ -74,12 +74,14 @@ const ProjectsSection = ({ projectsRef }) => {
               </p>
             </div>
             <div className="flex justify-around mb-5 mr-4 ml-4">
-              <h6 className="font-Poppins text-xs text-[#909faf] flex items-center cursor-pointer">
-                <a className="flex" href={project.live} target="_blank">
-                  <FaLaptopCode className="mr-2" />
-                  LIVE DEMO
-                </a>
-              </h6>
+              {project.live !== "" && (
+                <h6 className="font-Poppins text-xs text-[#909faf] flex items-center cursor-pointer">
+                  <a className="flex" href={project.live} target="_blank">
+                    <FaLaptopCode className="mr-2" />
+                    LIVE DEMO
+                  </a>
+                </h6>
+              )}
               <h6 className="font-Poppins text-xs text-[#909faf] flex items-center cursor-pointer">
                 <a className="flex" href={project.code} target="_blank">
                   <AiFillGithub className="mr-2" />

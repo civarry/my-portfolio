@@ -29,7 +29,11 @@ const HomeSection = ({ homeRef }) => {
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             Download Resume
           </a>
-          <img src={sendLightIcon} className="ml-2 w-4 h-4 animate-bounce" />
+          <img
+            src={sendLightIcon}
+            className="ml-2 w-4 h-4 animate-bounce"
+            alt="DL"
+          />
         </button>
 
         <div className="md:flex md:gap-2 hidden mt-2">

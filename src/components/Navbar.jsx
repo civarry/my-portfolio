@@ -46,9 +46,15 @@ export const Navbar = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
         }`}
       >
         <div className="flex justify-between items-center">
-          <span className="text-2xl px-3 font-bold font-[Century Gothic] cursor-pointer">
-            CJC
-          </span>
+          <a
+            href="/"
+            onClick={(e) => handleLinkClick(e, homeRef)}
+            className=" hover:text-cyan-500 duration-500"
+          >
+            <span className="text-2xl px-3 font-bold font-[Century Gothic] cursor-pointer">
+              CJC
+            </span>
+          </a>
 
           <span className="text-3xl cursor-pointer mx-2 md:hidden block">
             {menuOpen ? (

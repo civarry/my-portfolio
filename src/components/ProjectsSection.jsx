@@ -40,7 +40,7 @@ const ProjectsSection = ({ projectsRef }) => {
   return (
     <section
       ref={projectsRef}
-      className="section p-5 projects-section h-auto w-screen bg-[#04133A]  z-[-10] px-10 py-20 min-w-[300px] flex flex-col justify-start items-center gap-2"
+      className="section p-5 projects-section h-auto w-auto bg-[#04133A]  z-[-10] px-10 py-20 min-w-[333px] flex flex-col justify-start items-center gap-2"
     >
       <div className="flex flex-col w-auto h-fit items-center">
         <h2 className="conceal font-Poppins text-xs text-[#08c6ab] tracking-widest">

@@ -8,6 +8,7 @@ function App() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const footerRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
             aboutRef={aboutRef}
             projectsRef={projectsRef}
             contactRef={contactRef}
+            footerRef={footerRef}
           />
         </>
       )}

@@ -29,7 +29,7 @@ const ContactSection = ({ contactRef }) => {
   return (
     <section
       ref={contactRef}
-      className="section contact-section h-auto bg-[#0d012c] z-[-10] p-20 min-w-[300px] justify-around"
+      className="section contact-section w-auto h-auto bg-[#0d012c] z-[-10] p-20 min-w-[333px] justify-around"
     >
       <div className="flex flex-col gap-10 mx-auto md:flex-row">
         <div className="flex flex-col w-full">
@@ -87,6 +87,7 @@ const ContactSection = ({ contactRef }) => {
             name="name"
             placeholder="Your name"
             required
+            autoComplete="name"
           />
           <input
             className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
@@ -95,6 +96,7 @@ const ContactSection = ({ contactRef }) => {
             name="email"
             placeholder="Your email"
             required
+            autoComplete="email"
           />
           <input
             className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"
@@ -103,6 +105,7 @@ const ContactSection = ({ contactRef }) => {
             name="subject"
             placeholder="Subject"
             required
+            autoComplete="off"
           />
           <textarea
             className="w-full px-4 py-2 text-white border-gray-300 bg-[#14143a] bg-opacity-80 shadow-md rounded-md border-solid border border-[#9595965b] focus:outline-none focus:ring-1 focus:ring-indigo-200"

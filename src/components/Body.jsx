@@ -3,8 +3,14 @@ import HomeSection from "./HomeSection";
 import AboutSection from "./AboutSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
-
-export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
+import FooterSection from "./FooterSection";
+export const Body = ({
+  homeRef,
+  aboutRef,
+  projectsRef,
+  contactRef,
+  footerRef,
+}) => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -32,6 +38,8 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
       );
     if (contactRef.current)
       hiddenElements.push(...contactRef.current.querySelectorAll(".conceal"));
+    if (footerRef.current)
+      hiddenElements.push(...footerRef.current.querySelectorAll(".conceal"));
 
     hiddenElements.forEach((el) => {
       observer.observe(el);
@@ -43,7 +51,7 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
         observer.unobserve(el);
       });
     };
-  }, [homeRef, aboutRef, projectsRef, contactRef]);
+  }, [homeRef, aboutRef, projectsRef, contactRef, footerRef]);
 
   return (
     <>
@@ -51,6 +59,7 @@ export const Body = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
       <AboutSection aboutRef={aboutRef} />
       <ProjectsSection projectsRef={projectsRef} />
       <ContactSection contactRef={contactRef} />
+      <FooterSection footerRef={footerRef} />
     </>
   );
 };

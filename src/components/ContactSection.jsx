@@ -37,7 +37,7 @@ const ContactSection = ({ contactRef }) => {
       <h1 className="conceal font-Poppins font-black text-lg md:text-xl text-[#dce1eb] text-center lg:text-4xl lg:tracking-wide">
         Contact Me
       </h1>
-      <div className="flex flex-col mt-3 gap-10 mx-auto md:flex-row">
+      <div className="flex flex-col mt-3 gap-10 mx-auto md:flex-row md:w-4/5">
         <div className="flex flex-col w-full">
           <div className="conceal flex flex-col mt-5 gap-2">
             <h6 className="font-Poppins text-base text-[#909faf] flex items-center cursor-pointer">
@@ -80,7 +80,7 @@ const ContactSection = ({ contactRef }) => {
         >
           <div className="flex flex-col gap-2 w-full md:flex-row">
             <input
-              className="w-full px-4 py-4 text-white bg-[#14143a] bg-opacity-80 shadow-md rounded-md focus:ring-0"
+              className="w-full px-4 py-4 text-white bg-[#14143a] bg-opacity-80 shadow-md rounded-md focus:ring-0 "
               type="text"
               id="name"
               name="name"

@@ -21,29 +21,29 @@ const AboutSection = ({ aboutRef }) => {
       className="section about-section h-auto md:h-screen w-auto bg-[#04133A]  z-[-10] px-10 py-20 min-w-[333px] flex flex-col justify-center items-center gap-2 md:flex-col md:justify-between md:items-start md:gap-2 lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-2 xl:flex-row-reverse xl:justify-between xl:items-start xl:gap-2"
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top gap-3 lg:w-1/2 lg:items-start lg:justify-center lg:gap-6">
-        <h2 className="conceal font-Poppins text-xs text-[#08c6ab] tracking-widest">
-          ABOUT ME
+        <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest">
+          About Me
         </h2>
-        <h3 className="conceal font-Poppins font-bold text-lg text-[#dce1eb] md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
-          WHY HIRE ME FOR YOUR NEXT PROJECT?
+        <h3 className="conceal font-Poppins font-bold text-lg text-[#dce1eb] md:text-3xl lg:text-left lg:text-4xl lg:tracking-wide">
+          Why Hire Me for Your Next Project?
         </h3>
-        <p className="conceal text-[#cccccc] font-Poppins text-xs">
+        <p className="conceal text-[#cccccc] font-Poppins text-s">
           As a computer science graduate, I have been exposed to a wide range of
           programming tasks and problem-solving challenges. Among my favorites
           within my field of study is{" "}
           <strong>web design and development</strong>, which greatly enhances
           both creative thinking and problem-solving skills.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-xs">
+        <p className="conceal text-[#cccccc] font-Poppins text-s">
           Through this passion for creating websites, I have gained a solid
           understanding of HTML, CSS, JavaScript, React, Bootstrap, and Django.
           My knowledge of these web technologies has been acquired through the
           guidance of my university and my own self-driven learning.
         </p>
-        <h2 className="conceal font-Poppins text-xs text-[#08c6ab] tracking-widest hidden md:block">
-          HOW IT ALL BEGAN?
+        <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest hidden md:block">
+          How It All Began?
         </h2>
-        <p className="conceal text-[#cccccc] font-Poppins text-xs hidden md:block">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block">
           During high school, my fascination with mobile games sparked my
           interest in computer science and programming. I wanted to understand
           how these games were built and it drove me to explore further. I
@@ -51,7 +51,7 @@ const AboutSection = ({ aboutRef }) => {
           without extensive coding knowledge. This experience ignited my passion
           for bringing ideas to life.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-xs hidden md:block">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block">
           In college, I ventured into web development by building a website
           using HTML, CSS, and JavaScript. Crafting an online presence
           accessible to anyone intrigued me and opened up a new avenue for my
@@ -61,14 +61,14 @@ const AboutSection = ({ aboutRef }) => {
           possibilities and the chance to make a meaningful impact through
           technology.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-xs hidden md:block">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block">
           Now, I'm excited to embark on the next chapter of my journey,
           expanding my skills, embracing new technologies, and creating
           remarkable experiences that push the boundaries of computer science.
         </p>
         <div className="flex flex-col">
-          <h2 className="conceal font-Poppins text-xs text-[#08c6ab] tracking-widest">
-            TECH STACK I USE
+          <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest">
+            Tech Stack I Use
           </h2>
           <div className="conceal flex flex-wrap gap-2 justify-center pt-4">
             <SiHtml5

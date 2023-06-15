@@ -76,7 +76,7 @@ const HomeSection = ({ homeRef }) => {
         <h3 className="conceal font-Poppins font-black text-lg bg-gradient-to-r from-[#ed7b84] to-[#9055ff] text-transparent bg-clip-text text-center md:text-4xl lg:text-left lg:text-6xl lg:tracking-wide lg:leading-normal">
           Christian Joy C. Carito
         </h3>
-        <p className="conceal font-Rubik text-sm text-[#cccccc] text-center md:text-lg lg:text-left lg:text-xl">
+        <p className="conceal font-Rubik text-base text-[#cccccc] text-center md:text-lg lg:text-left lg:text-xl">
           A Computer Science graduate based in Quezon City, Philippines, with an
           absolute passion for building captivating websites and applications.
         </p>

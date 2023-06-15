@@ -61,14 +61,14 @@ const ProjectsSection = ({ projectsRef }) => {
               className="w-full rounded-t-md"
               alt="Project"
             />
-            <div className="p-4 flex-grow md:h-96">
+            <div className="p-4 flex-grow md:h-96 overflow-clip">
               <h3 className="font-Poppins font-black text-xs mt-2 mb-2 bg-gradient-to-r from-[#ed7b84] to-[#9055ff] text-transparent bg-clip-text text-center tracking-widest md:text-left">
                 {project.tech}
               </h3>
               <h2 className="text-xl font-Poppins font-bold mb-2 text-[#59c378]">
                 {project.title}
               </h2>
-              <p className="text-[#cccccc] font-Poppins text-s text-left tracking-widest">
+              <p className="text-[#cccccc] font-Poppins text-base text-left tracking-widest">
                 {project.description}
               </p>
             </div>

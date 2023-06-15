@@ -22,7 +22,7 @@ const HomeSection = ({ homeRef }) => {
           Christian Joy C. Carito
         </h3>
         <p className="conceal font-Rubik text-sm text-[#cccccc] text-center md:text-lg lg:text-left lg:text-xl">
-          A Computer Science student based in Quezon City, Philippines, with an
+          A Computer Science graduate based in Quezon City, Philippines, with an
           absolute passion for building captivating websites and applications.
         </p>
         <button className="conceal cursor-pointer text-white flex items-center font-Code bg-gradient-to-r from-[#ed7b84] to-[#9055ff] px-4 py-2 md:px-8 md:py-4 max-w-[250px] rounded-md lg:items-left hover:from-[#9055ff] hover:to-[#ed7b84] transition-all duration-300">

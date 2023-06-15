@@ -43,7 +43,7 @@ const HomeSection = ({ homeRef }) => {
       }
 
       const typingSpeed = isDeleting ? 50 : 150;
-      const delay = isDeleting ? 100 : 1000;
+      const delay = isDeleting ? 1000 : 1000;
 
       if (count === 0 && !isDeleting) {
         setTimeout(type, delay);

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Me from "../assets/Me.png";
 import Resume from "../assets/Carito_Resume.pdf";
 import { AiFillGithub } from "react-icons/ai";
@@ -6,14 +6,69 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import sendLightIcon from "../assets/send-light.svg";
 
 const HomeSection = ({ homeRef }) => {
+  const [currentValueIndex, setCurrentValueIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+
+  const values = [
+    "Frontend Web Developer",
+    "Web Developer",
+    "Software Developer",
+  ];
+
+  useEffect(() => {
+    let text = "";
+    let isDeleting = false;
+    let currentIndex = 0;
+    let count = 0;
+
+    const type = () => {
+      const currentTextIndex = currentIndex % values.length;
+      const fullText = values[currentTextIndex];
+
+      if (isDeleting) {
+        text = fullText.substring(0, text.length - 1);
+      } else {
+        text = fullText.substring(0, text.length + 1);
+      }
+
+      setCurrentText(text);
+
+      if (!isDeleting && text === fullText) {
+        isDeleting = true;
+        count = 0;
+      } else if (isDeleting && text === "") {
+        isDeleting = false;
+        currentIndex++;
+        count = 0;
+      }
+
+      const typingSpeed = isDeleting ? 50 : 150;
+      const delay = isDeleting ? 100 : 1000;
+
+      if (count === 0 && !isDeleting) {
+        setTimeout(type, delay);
+      } else if (count < 5 && isDeleting) {
+        setTimeout(type, delay / 3);
+      } else {
+        setTimeout(type, typingSpeed);
+      }
+
+      count++;
+    };
+
+    const interval = setTimeout(type, 1500);
+
+    return () => clearTimeout(interval);
+  }, []);
+
   return (
     <section
       ref={homeRef}
       className="section home-section h-screen w-auto bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[333px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
-        <h3 className="conceal font-Code text-[#eff30e] text-xs text-center md:text-lg lg:text-left lg:text-xl">
-          Frontend Web Developer
+        <h3 className="conceal font-Code text-[#eff30e] text-xs h-4 text-center md:text-lg lg:text-left lg:h-6 lg:text-xl overflow-hidden">
+          {currentText}
         </h3>
         <h3 className="conceal font-Poppins font-black text-lg text-[#dce1eb] text-center md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
           Hey! I Am

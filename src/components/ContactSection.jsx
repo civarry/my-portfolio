@@ -57,7 +57,7 @@ const ContactSection = ({ contactRef }) => {
                 <div className="rounded-full bg-[#a7c6cf] p-1 md:p-5 mr-2">
                   <FaEnvelope className="text-[#7199a7]" />
                 </div>
-                carito.christian@gmail.com
+                Carito.christian@gmail.com
               </a>
             </h6>
             <h6 className="font-Poppins text-base text-[#909faf] flex items-center cursor-pointer">

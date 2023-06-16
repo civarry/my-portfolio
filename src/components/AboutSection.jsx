@@ -40,10 +40,10 @@ const AboutSection = ({ aboutRef }) => {
           My knowledge of these web technologies has been acquired through the
           guidance of my university and my own self-driven learning.
         </p>
-        <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest hidden md:block">
+        <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest hidden xl:block">
           How It All Began?
         </h2>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden xl:block indent-8">
           During high school, my fascination with mobile games sparked my
           interest in computer science and programming. I wanted to understand
           how these games were built and it drove me to explore further. I
@@ -51,7 +51,7 @@ const AboutSection = ({ aboutRef }) => {
           without extensive coding knowledge. This experience ignited my passion
           for bringing ideas to life.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden xl:block indent-8">
           In college, I ventured into web development by building a website
           using HTML, CSS, and JavaScript. Crafting an online presence
           accessible to anyone intrigued me and opened up a new avenue for my
@@ -61,7 +61,7 @@ const AboutSection = ({ aboutRef }) => {
           possibilities and the chance to make a meaningful impact through
           technology.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden xl:block indent-8">
           Now, I'm excited to embark on the next chapter of my journey,
           expanding my skills, embracing new technologies, and creating
           remarkable experiences that push the boundaries of computer science.

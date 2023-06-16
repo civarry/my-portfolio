@@ -27,14 +27,14 @@ const AboutSection = ({ aboutRef }) => {
         <h3 className="conceal font-Poppins font-bold text-lg text-[#dce1eb] md:text-3xl lg:text-left lg:text-4xl lg:tracking-wide">
           Why Hire Me for Your Next Project?
         </h3>
-        <p className="conceal text-[#cccccc] font-Poppins text-base indent-4">
+        <p className="conceal text-[#cccccc] font-Poppins text-base indent-8">
           As a computer science graduate, I have been exposed to a wide range of
           programming tasks and problem-solving challenges. Among my favorites
           within my field of study is{" "}
           <strong>web design and development</strong>, which greatly enhances
           both creative thinking and problem-solving skills.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-base indent-4">
+        <p className="conceal text-[#cccccc] font-Poppins text-base indent-8">
           Through this passion for creating websites, I have gained a solid
           understanding of HTML, CSS, JavaScript, React, Bootstrap, and Django.
           My knowledge of these web technologies has been acquired through the
@@ -43,7 +43,7 @@ const AboutSection = ({ aboutRef }) => {
         <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest hidden md:block">
           How It All Began?
         </h2>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-4">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
           During high school, my fascination with mobile games sparked my
           interest in computer science and programming. I wanted to understand
           how these games were built and it drove me to explore further. I
@@ -51,7 +51,7 @@ const AboutSection = ({ aboutRef }) => {
           without extensive coding knowledge. This experience ignited my passion
           for bringing ideas to life.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-4">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
           In college, I ventured into web development by building a website
           using HTML, CSS, and JavaScript. Crafting an online presence
           accessible to anyone intrigued me and opened up a new avenue for my
@@ -61,7 +61,7 @@ const AboutSection = ({ aboutRef }) => {
           possibilities and the chance to make a meaningful impact through
           technology.
         </p>
-        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-4">
+        <p className="conceal text-[#cccccc] font-Poppins text-base hidden md:block indent-8">
           Now, I'm excited to embark on the next chapter of my journey,
           expanding my skills, embracing new technologies, and creating
           remarkable experiences that push the boundaries of computer science.

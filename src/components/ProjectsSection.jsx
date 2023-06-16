@@ -68,7 +68,7 @@ const ProjectsSection = ({ projectsRef }) => {
               <h2 className="text-xl font-Poppins font-bold mb-2 text-[#59c378]">
                 {project.title}
               </h2>
-              <p className="text-[#cccccc] font-Poppins text-base text-left tracking-widest indent-4">
+              <p className="text-[#cccccc] font-Poppins text-base text-left tracking-widest indent-8">
                 {project.description}
               </p>
             </div>

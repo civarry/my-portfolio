@@ -4,6 +4,9 @@ import AboutSection from "./AboutSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
 import FooterSection from "./FooterSection";
+
+const commonPaddingClass = "px-20 py-40"; //adjust the page padding
+
 export const Body = ({
   homeRef,
   aboutRef,
@@ -56,9 +59,12 @@ export const Body = ({
 
   return (
     <>
-      <HomeSection homeRef={homeRef} />
-      <AboutSection aboutRef={aboutRef} />
-      <ProjectsSection projectsRef={projectsRef} />
+      <HomeSection homeRef={homeRef} paddingClass={commonPaddingClass} />
+      <AboutSection aboutRef={aboutRef} paddingClass={commonPaddingClass} />
+      <ProjectsSection
+        projectsRef={projectsRef}
+        paddingClass={commonPaddingClass}
+      />
       <ContactSection contactRef={contactRef} />
       <FooterSection footerRef={footerRef} />
     </>

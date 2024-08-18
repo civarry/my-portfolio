@@ -13,12 +13,12 @@ import {
   SiFigma,
 } from "react-icons/si";
 
-const AboutSection = ({ aboutRef }) => {
+const AboutSection = ({ aboutRef, paddingClass }) => {
   const iconSize = 24; // Define the size constant
   return (
     <section
       ref={aboutRef}
-      className="section about-section h-auto md:h-screen w-auto bg-[#04133A]  z-[-10] px-10 pt-20 pb-10 min-w-[333px] flex flex-col justify-center items-center gap-2 md:flex-col md:justify-between md:items-start md:gap-2 lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-2 xl:flex-row-reverse xl:justify-between xl:items-start xl:gap-2"
+      className={`${paddingClass}   section about-section h-auto md:h-screen w-auto bg-[#04133A]  z-[-10] min-w-[333px] flex flex-col justify-center items-center gap-2 md:flex-col md:justify-between md:items-start md:gap-2 lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-2 xl:flex-row-reverse xl:justify-between xl:items-start xl:gap-2`}
     >
       <div className="w-full h-auto flex-grow flex flex-col justify-start gap-3 lg:w-1/2 lg:items-start lg:justify-center lg:gap-6">
         <h2 className="conceal font-Poppins text-base text-[#08c6ab] tracking-widest">

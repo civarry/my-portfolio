@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Me from "../assets/Me.png";
+import Me from "../assets/Me.webp";
 import Resume from "../assets/Carito_Resume.pdf";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
@@ -10,9 +10,9 @@ const HomeSection = ({ homeRef }) => {
   const [currentText, setCurrentText] = useState("");
 
   const values = [
-    "Frontend Web Developer",
-    "Web Developer",
+    "Full Stack Developer",
     "Software Developer",
+    "Data Scientist",
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ const HomeSection = ({ homeRef }) => {
   return (
     <section
       ref={homeRef}
-      className="section home-section h-screen w-auto bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 py-20 min-w-[333px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
+      className="section home-section h-screen w-auto bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] px-10 pt-20 pb-10 min-w-[333px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2"
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
         <h3 className="conceal font-Code text-[#eff30e] text-base h-5 text-center lg:text-left lg:h-6 lg:text-xl overflow-hidden">
@@ -120,7 +120,7 @@ const HomeSection = ({ homeRef }) => {
           <div className="w-full h-full md:w-auto md:h-auto md:absolute md:inset-0">
             <img
               src={Me}
-              className="object-cover rounded-xl h-full w-full mx-auto grayscale md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full lg:mt-5"
+              className="object-cover rounded-xl h-full w-full mx-auto grayscale brightness-60 md:w-full md:h-full md:rounded-xl lg:rounded-xl lg:w-full lg:h-full lg:mt-5"
               alt="Me"
             />
           </div>

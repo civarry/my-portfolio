@@ -67,7 +67,7 @@ const HomeSection = ({ homeRef, paddingClass }) => {
       className={`${paddingClass} section home-section h-screen w-auto bg-gradient-to-br from-[#0d012c] to-[#04133A]  z-[-10] min-w-[333px] flex flex-col-reverse justify-center items-center gap-2 md:flex-col-reverse md:justify-between md:items-start md:gap-2 lg:flex-row lg:justify-between lg:items-center lg:gap-2 xl:flex-row xl:justify-between xl:items-center xl:gap-2`}
     >
       <div className="w-full h-full flex-grow flex flex-col justify-top items-center gap-3 lg:items-start lg:justify-center lg:gap-6">
-        <h3 className="conceal font-Code text-[#eff30e] text-base h-5 text-center lg:text-left lg:h-6 lg:text-xl overflow-hidden">
+        <h3 className="conceal font-Code text-[#08c6ab] text-base h-5 text-center lg:text-left lg:h-6 lg:text-xl overflow-hidden">
           {currentText}
         </h3>
         <h3 className="conceal font-Poppins font-black text-lg text-[#dce1eb] text-center md:text-3xl lg:text-left lg:text-6xl lg:tracking-wide">
